@@ -11,6 +11,11 @@ import './assets/css/global.css'
 import axios from 'axios'
 //配置请求根路径
 axios.defaults.baseURL="http://api.yigou.com/api"
+//请求头中加入Authorization属性（过滤）
+// axios.interceptors.request.use(config=>{
+//   config.headers.Authorization=window.sessionStorage.getItem('token')
+//   return config
+// })
 // axios可以全局引用
 Vue.prototype.$http = axios
 
