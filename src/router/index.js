@@ -6,6 +6,9 @@ import Index from '../components/Index'
 import Users from '../components/User/Users'
 import UserForm from '../components/User/UserForm'
 import ItemList from '../components/Item/itemList'
+import Rights from '../components/Power/Rights'
+import Roles from '../components/Power/Roles'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -19,7 +22,9 @@ const routes = [
       {path: '/index',component: Index},
       {path: '/users',component: Users},
       {path: '/userForm',component: UserForm},
-      {path: '/itemList',component: ItemList}]
+      {path: '/itemList',component: ItemList},
+      {path: '/rights',component: Rights},
+      {path: '/roles',component: Roles}]
   }
 ]
 

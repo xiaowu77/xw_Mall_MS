@@ -25,3 +25,5 @@ var rights=[
     level: '2'
   },
 ]
+
+export default rights;

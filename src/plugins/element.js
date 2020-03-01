@@ -4,8 +4,10 @@ import { Form, FormItem, Message, Input,
   Breadcrumb, BreadcrumbItem, Main, Menu,
   Submenu, MenuItem, Card, Row,
   Col, Table, TableColumn, Switch,
-  Tooltip, Pagination, Dialog, MessageBox} from 'element-ui'
+  Tooltip, Pagination, Dialog, MessageBox,
+  Tag} from 'element-ui'
 
+Vue.use(Tag)
 Vue.use(Dialog)
 Vue.use(Pagination)
 Vue.use(Tooltip)
