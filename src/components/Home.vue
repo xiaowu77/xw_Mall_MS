@@ -69,7 +69,7 @@
               <span>商品列表</span>
               </template>
             </el-menu-item>
-            <el-menu-item index="/categoryList">
+            <el-menu-item index="/cate">
               <template slot="title">
                 <i class="el-icon-box"></i>
                 <span>商品分类</span>

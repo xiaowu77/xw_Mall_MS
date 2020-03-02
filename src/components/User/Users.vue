@@ -55,8 +55,8 @@
       </div>
     </el-card>
     <!--添加用户对话框-->
-    <el-dialog :title="isEdit ? '修改用户信息': '新增用户'" :visible.sync="addDialogVisible" width="35%" @close="DialogClosed">
-      <user-form :isEdit="isEdit" :oldUserInfo="oldUserInfo"></user-form>
+    <el-dialog :title="isEdit ? '修改用户信息': '新增用户'" :visible.sync="addDialogVisible" width="35%" >
+      <user-form :isEdit="isEdit" :oldUserInfo="oldUserInfo" @close="DialogClosed"></user-form>
     </el-dialog>
   </div>
 </template>
@@ -180,12 +180,5 @@
 </script>
 
 <style lang="less" scoped>
-  .el-breadcrumb{
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-  .el-table{
-    margin-top: 15px;
-    font-size: 12px;
-  }
+
 </style>

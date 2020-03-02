@@ -23,7 +23,7 @@ var rights=[
     authName:'添加商品',
     path: 'goods',
     level: '2'
-  },
+  }
 ]
 
 export default rights;

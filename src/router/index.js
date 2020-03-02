@@ -6,8 +6,10 @@ import Index from '../components/Index'
 import Users from '../components/User/Users'
 import UserForm from '../components/User/UserForm'
 import ItemList from '../components/Item/itemList'
-import Rights from '../components/Power/Rights'
+import Rights from '../components/Power/right'
 import Roles from '../components/Power/Roles'
+import Cate from '../components/Goods/Cate'
+import CateForm from '../components/Goods/CateForm'
 
 Vue.use(VueRouter)
 
@@ -24,7 +26,9 @@ const routes = [
       {path: '/userForm',component: UserForm},
       {path: '/itemList',component: ItemList},
       {path: '/rights',component: Rights},
-      {path: '/roles',component: Roles}]
+      {path: '/roles',component: Roles},
+      {path: '/cate',component: Cate},
+      {path: '/cateForm',component: CateForm}]
   }
 ]
 

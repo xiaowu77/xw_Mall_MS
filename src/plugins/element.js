@@ -5,8 +5,9 @@ import { Form, FormItem, Message, Input,
   Submenu, MenuItem, Card, Row,
   Col, Table, TableColumn, Switch,
   Tooltip, Pagination, Dialog, MessageBox,
-  Tag} from 'element-ui'
+  Tag, Cascader} from 'element-ui'
 
+Vue.use(Cascader)
 Vue.use(Tag)
 Vue.use(Dialog)
 Vue.use(Pagination)

@@ -25,7 +25,7 @@
 </template>
 
 <script>
-  import rights from './rights';
+  import rights from './right';
     export default {
       name: "rights",
       data(){
@@ -52,12 +52,5 @@
 </script>
 
 <style lang="less" scoped>
-  .el-breadcrumb{
-    font-size: 14px;
-    margin-bottom: 15px;
-  }
-  .el-table{
-    margin-top: 15px;
-    font-size: 12px;
-  }
+
 </style>

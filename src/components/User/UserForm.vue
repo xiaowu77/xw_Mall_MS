@@ -75,7 +75,7 @@
                 if(res.status !==200) return this.$message.error('添加用户失败')
                 this.$message.success('添加用户失败')
                 //关闭对话框
-                this.$emit('DialogClosed')
+                this.$emit('close')
                 // 重新加载数据
                 this.getUserList()
               })
