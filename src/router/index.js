@@ -10,6 +10,8 @@ import Rights from '../components/Power/right'
 import Roles from '../components/Power/Roles'
 import Cate from '../components/Goods/Cate'
 import CateForm from '../components/Goods/CateForm'
+import Params from '../components/Goods/Params'
+import ParamsForm from '../components/Goods/ParamsForm'
 
 Vue.use(VueRouter)
 
@@ -28,7 +30,9 @@ const routes = [
       {path: '/rights',component: Rights},
       {path: '/roles',component: Roles},
       {path: '/cate',component: Cate},
-      {path: '/cateForm',component: CateForm}]
+      {path: '/cateForm',component: CateForm},
+      {path: '/params',component: Params},
+      {path: '/paramsForm',component: ParamsForm}]
   }
 ]
 

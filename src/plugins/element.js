@@ -5,8 +5,12 @@ import { Form, FormItem, Message, Input,
   Submenu, MenuItem, Card, Row,
   Col, Table, TableColumn, Switch,
   Tooltip, Pagination, Dialog, MessageBox,
-  Tag, Cascader} from 'element-ui'
+  Tag, Cascader, Alert, Tabs,
+  TabPane} from 'element-ui'
 
+Vue.use(TabPane)
+Vue.use(Tabs)
+Vue.use(Alert)
 Vue.use(Cascader)
 Vue.use(Tag)
 Vue.use(Dialog)

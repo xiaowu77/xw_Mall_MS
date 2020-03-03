@@ -75,7 +75,7 @@
                 <span>商品分类</span>
               </template>
             </el-menu-item>
-            <el-menu-item index="/parameter">
+            <el-menu-item index="/params">
               <template slot="title">
                 <i class="el-icon-date"></i>
                 <span>商品参数</span>
