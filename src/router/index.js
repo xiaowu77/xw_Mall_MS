@@ -1,24 +1,41 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Login from '../components/Login'
-import Home from '../components/Home'
-import Upload from '../components/Form/Upload'
-import Editor from '../components/Form/Editor'
-import Users from '../components/User/Users'
-import UserForm from '../components/User/UserForm'
-import Rights from '../components/Power/Rights'
-import Roles from '../components/Power/Roles'
-import Cate from '../components/Goods/Cate'
-import CateForm from '../components/Goods/CateForm'
-import Params from '../components/Goods/Params'
-import ParamsForm from '../components/Goods/ParamsForm'
-import ItemList from '../components/Goods/ItemList'
-import ItemListForm from '../components/Goods/ItemListForm'
-import Brand from '../components/Goods/Brand'
-import BrandForm from '../components/Goods/BrandForm'
-import Report from '../components/Report/Report'
-import Order from '../components/Order/Order'
-
+// import Login from '../components/Login'
+// import Home from '../components/Home'
+const Login = () => import(/* webpackChunkName: "Login_Home" */ '../components/Login')
+const Home = () => import(/* webpackChunkName: "Login_Home" */ '../components/Home')
+// import Upload from '../components/Form/Upload'
+// import Editor from '../components/Form/Editor'
+const Upload =() => import(/* webpackChunkName: "Upload_Editor" */ '../components/Form/Upload')
+const Editor =() => import(/* webpackChunkName: "Upload_Editor" */ '../components/Form/Editor')
+// import Users from '../components/User/Users'
+// import UserForm from '../components/User/UserForm'
+const Users =() => import(/* webpackChunkName: "Users_UserForm" */ '../components/User/Users')
+const UserForm =() => import(/* webpackChunkName: "Users_UserForm" */ '../components/User/UserForm')
+// import Rights from '../components/Power/Rights'
+// import Roles from '../components/Power/Roles'
+const Rights =() => import(/* webpackChunkName: "Rights_Roles" */ '../components/Power/Rights')
+const Roles =() => import(/* webpackChunkName: "Rights_Roles" */ '../components/Power/Roles')
+// import Cate from '../components/Goods/Cate'
+// import CateForm from '../components/Goods/CateForm'
+// import Params from '../components/Goods/Params'
+// import ParamsForm from '../components/Goods/ParamsForm'
+// import ItemList from '../components/Goods/ItemList'
+// import ItemListForm from '../components/Goods/ItemListForm'
+// import Brand from '../components/Goods/Brand'
+// import BrandForm from '../components/Goods/BrandForm'
+const Cate =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/Cate')
+const CateForm =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/CateForm')
+const Params =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/Params')
+const ParamsForm =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/ParamsForm')
+const ItemList =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/ItemList')
+const ItemListForm =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/ItemListForm')
+const Brand =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/Brand')
+const BrandForm =() => import(/* webpackChunkName: "Goods" */ '../components/Goods/BrandForm')
+// import Report from '../components/Report/Report'
+// import Order from '../components/Order/Order'
+const Report =() => import(/* webpackChunkName: "Report_Order" */ '../components/Report/Report')
+const Order =() => import(/* webpackChunkName: "Report_Order" */ '../components/Order/Order')
 Vue.use(VueRouter)
 
 const routes = [
