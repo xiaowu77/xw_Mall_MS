@@ -17,6 +17,7 @@ import ItemListForm from '../components/Goods/ItemListForm'
 import Brand from '../components/Goods/Brand'
 import BrandForm from '../components/Goods/BrandForm'
 import Report from '../components/Report/Report'
+import Order from '../components/Order/Order'
 
 Vue.use(VueRouter)
 
@@ -43,6 +44,7 @@ const routes = [
       {path: '/brand',component: Brand},
       {path: '/brandForm',component: BrandForm},
       {path: '/report',component: Report},
+      {path: '/order',component: Order}
       ]
   }
 ]

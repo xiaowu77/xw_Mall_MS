@@ -94,7 +94,7 @@
               <span>订单管理</span>
             </template>
             <!--二级菜单-->
-            <el-menu-item index="/orderList">
+            <el-menu-item index="/order">
               <template slot="title">
                 <i class="el-icon-shopping-cart-2"></i>
                 <span>订单列表</span>
