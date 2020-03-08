@@ -2,7 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login'
 import Home from '../components/Home'
-import Index from '../components/Index'
+import Upload from '../components/Form/Upload'
+import Editor from '../components/Form/Editor'
 import Users from '../components/User/Users'
 import UserForm from '../components/User/UserForm'
 import Rights from '../components/Power/Rights'
@@ -15,8 +16,8 @@ import ItemList from '../components/Goods/ItemList'
 import ItemListForm from '../components/Goods/ItemListForm'
 import Brand from '../components/Goods/Brand'
 import BrandForm from '../components/Goods/BrandForm'
-import Upload from '../components/Form/Upload'
-import Editor from '../components/Form/Editor'
+import Report from '../components/Report/Report'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -25,9 +26,10 @@ const routes = [
   {
     path: '/home',
     component: Home,
-    redirect: '/index',
+    redirect: '/report',
     children: [
-      {path: '/index',component: Index},
+      {path: '/upload',component: Upload},
+      {path: '/editor',component: Editor},
       {path: '/users',component: Users},
       {path: '/userForm',component: UserForm},
       {path: '/rights',component: Rights},
@@ -40,8 +42,8 @@ const routes = [
       {path: '/itemListForm',component: ItemListForm},
       {path: '/brand',component: Brand},
       {path: '/brandForm',component: BrandForm},
-      {path: '/upload',component: Upload},
-      {path: '/editor',component: Editor}]
+      {path: '/report',component: Report},
+      ]
   }
 ]
 
