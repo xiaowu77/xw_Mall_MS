@@ -5,14 +5,16 @@ import Home from '../components/Home'
 import Index from '../components/Index'
 import Users from '../components/User/Users'
 import UserForm from '../components/User/UserForm'
-import ItemList from '../components/Item/itemList'
-import Rights from '../components/Power/right'
+import Rights from '../components/Power/Rights'
 import Roles from '../components/Power/Roles'
 import Cate from '../components/Goods/Cate'
 import CateForm from '../components/Goods/CateForm'
 import Params from '../components/Goods/Params'
 import ParamsForm from '../components/Goods/ParamsForm'
-
+import ItemList from '../components/Goods/ItemList'
+import ItemListForm from '../components/Goods/ItemListForm'
+import Upload from '../components/Form/Upload'
+import Editor from '../components/Form/Editor'
 Vue.use(VueRouter)
 
 const routes = [
@@ -26,13 +28,16 @@ const routes = [
       {path: '/index',component: Index},
       {path: '/users',component: Users},
       {path: '/userForm',component: UserForm},
-      {path: '/itemList',component: ItemList},
       {path: '/rights',component: Rights},
       {path: '/roles',component: Roles},
       {path: '/cate',component: Cate},
       {path: '/cateForm',component: CateForm},
       {path: '/params',component: Params},
-      {path: '/paramsForm',component: ParamsForm}]
+      {path: '/paramsForm',component: ParamsForm},
+      {path: '/itemList',component: ItemList},
+      {path: '/itemListForm',component: ItemListForm},
+      {path: '/upload',component: Upload},
+      {path: '/editor',component: Editor}]
   }
 ]
 

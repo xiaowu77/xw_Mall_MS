@@ -26,4 +26,5 @@ const getCateListTree = (res) => {
   }
   return null;
 }
+
 export default getCateListTree;

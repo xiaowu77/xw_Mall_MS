@@ -11,3 +11,18 @@ html,body,#app{
     margin-top: 15px;
     font-size: 12px;
 }
+.el-steps{
+    margin: 15px 0;
+}
+.el-step__title{
+    font-size: 12px;
+}
+.el-tabs{
+    height: 100% !important;
+}
+.ql-editor{
+    min-height: 250px;
+}
+.el-tabs__content{
+    width: 75%;
+}

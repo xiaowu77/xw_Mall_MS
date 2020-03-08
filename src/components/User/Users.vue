@@ -48,7 +48,7 @@
           @current-change="handleCurrentChange"
           :current-page="queryInfo.page"
           :page-sizes="[5, 10, 15, 20]"
-          :page-size="queryInfo.row"
+          :page-size="queryInfo.rows"
           layout="total, sizes, prev, pager, next, jumper"
           :total="totalPage">
         </el-pagination>
@@ -77,8 +77,6 @@
               // password:'',
               // phone:''
             },
-            //添加表单验证
-
             addDialogVisible: false,//对话框是否显示
             queryInfo:{
               key:'',
@@ -123,7 +121,7 @@
             })
         },
         handleSizeChange(newSize){
-          this.queryInfo.row=newSize
+          this.queryInfo.rows=newSize
           this.getUserList()
         },
         handleCurrentChange(newPage){

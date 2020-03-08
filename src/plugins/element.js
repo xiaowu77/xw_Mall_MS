@@ -6,12 +6,17 @@ import { Form, FormItem, Message, Input,
   Col, Table, TableColumn, Switch,
   Tooltip, Pagination, Dialog, MessageBox,
   Tag, Cascader, Alert, Tabs,
-  TabPane} from 'element-ui'
+  TabPane, Step, Steps, Select,
+  Option, Upload} from 'element-ui'
 
+Vue.use(Option)
+Vue.use(Steps)
+Vue.use(Step)
 Vue.use(TabPane)
 Vue.use(Tabs)
 Vue.use(Alert)
 Vue.use(Cascader)
+Vue.use(Select)
 Vue.use(Tag)
 Vue.use(Dialog)
 Vue.use(Pagination)
@@ -36,5 +41,6 @@ Vue.use(Table)
 Vue.use(BreadcrumbItem)
 Vue.use(TableColumn)
 Vue.use(Switch)
+Vue.use(Upload)
 Vue.prototype.$message=Message
 Vue.prototype.$confirm=MessageBox.confirm

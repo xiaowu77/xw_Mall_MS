@@ -47,6 +47,7 @@
             mgstate:'',
             phone:''
           },
+          //添加表单验证
           addRuleForm:{
             username:[
               {required: true, message: '请输入用户名', trigger: 'blur'},
