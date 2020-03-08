@@ -23,15 +23,15 @@
         <i v-else class="el-icon-plus logo-uploader-icon" :style="avatarStyle"></i>
       </div>
     </el-upload>
-    <v-dialog v-model="show" max-width="500">
+    <el-dialog v-model="show" max-width="500">
       <img width="500px" :src="dialogImageUrl" alt="">
-    </v-dialog>
+    </el-dialog>
   </div>
 </template>
 
 <script>
   export default {
-    name: "Editor",
+    name: "Upload",
     props: {
       url: {
         type: String

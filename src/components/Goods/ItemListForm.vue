@@ -17,7 +17,7 @@
             <el-form-item label="选择商品" prop="goodsCB">
               <el-col :span="8">
                 <el-cascader expand-trigger="hover" :options="parentCateList" :props="cascaderProps"
-                             @change="handleCateChanged" v-model="addItemForm.selectedPids" clearable placeholder="请选择分类">
+                              v-model="addItemForm.selectedPids" clearable placeholder="请选择分类">
                 </el-cascader>
               </el-col>
               <el-col :span="8">
@@ -274,10 +274,6 @@
             .then(res =>{
               this.parentCateList=getCateListTree(res)
             })
-        },
-        // 根据参数组id获取对应商品信息
-        handleCateChanged(){
-
         },
         // 阻止标签页切换
         beforeTabLeave(activeName,oldActiveName){

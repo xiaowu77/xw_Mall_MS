@@ -13,6 +13,8 @@ import Params from '../components/Goods/Params'
 import ParamsForm from '../components/Goods/ParamsForm'
 import ItemList from '../components/Goods/ItemList'
 import ItemListForm from '../components/Goods/ItemListForm'
+import Brand from '../components/Goods/Brand'
+import BrandForm from '../components/Goods/BrandForm'
 import Upload from '../components/Form/Upload'
 import Editor from '../components/Form/Editor'
 Vue.use(VueRouter)
@@ -36,6 +38,8 @@ const routes = [
       {path: '/paramsForm',component: ParamsForm},
       {path: '/itemList',component: ItemList},
       {path: '/itemListForm',component: ItemListForm},
+      {path: '/brand',component: Brand},
+      {path: '/brandForm',component: BrandForm},
       {path: '/upload',component: Upload},
       {path: '/editor',component: Editor}]
   }

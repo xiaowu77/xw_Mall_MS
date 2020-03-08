@@ -69,6 +69,12 @@
               <span>商品列表</span>
               </template>
             </el-menu-item>
+            <el-menu-item index="/brand">
+              <template slot="title">
+                <i class="el-icon-box"></i>
+                <span>品牌管理</span>
+              </template>
+            </el-menu-item>
             <el-menu-item index="/cate">
               <template slot="title">
                 <i class="el-icon-box"></i>
